@@ -26,4 +26,14 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  title: string;
+
+  constructor() {
+    this.title = 'New Title';
+  }
+
+  setCurrentTitle() {
+    console.log('lol', this.title);
+  }
+}
