@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { Ingredients } from '../shared/ingredients.model';
 
 @Component({
   selector: 'app-shooping-list',
   templateUrl: './shooping-list.component.html',
-  styleUrls: ['./shooping-list.component.scss']
+  styleUrls: ['./shooping-list.component.scss'],
 })
 export class ShoopingListComponent {
-
+  ingredients: Ingredients[] = [
+    new Ingredients('Apple', 20),
+    new Ingredients('Tomatoes', 10),
+  ];
 }
