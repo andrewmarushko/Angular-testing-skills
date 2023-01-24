@@ -15,10 +15,12 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Recipes</a>
+          <a class="nav-link" (click)="onSelect('recipe')" href="#">Recipes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Shooping List</a>
+          <a class="nav-link" (click)="onSelect('shopping-list')" href="#"
+            >Shooping List</a
+          >
         </li>
       </ul>
       <div class="dropdown">
