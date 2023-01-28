@@ -11,7 +11,7 @@ export class ShoopingListComponent {
     new Ingredients('Apple', 20),
     new Ingredients('Tomatoes', 10),
   ];
-
+  testUnless: boolean = false;
   onIngredientAdded(ingredient: Ingredients) {
     this.ingredients.push(ingredient);
   }
