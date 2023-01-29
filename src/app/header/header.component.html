@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Recipe</a>
+    <a class="navbar-brand" routerLink="/">Recipe</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,10 +15,15 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" (click)="onSelect('recipe')" href="#">Recipes</a>
+          <a class="nav-link" routerLink="/recipes" routerLinkActive="active"
+            >Recipes</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="onSelect('shopping-list')" href="#"
+          <a
+            class="nav-link"
+            routerLink="/shopping-list"
+            routerLinkActive="active"
             >Shooping List</a
           >
         </li>
@@ -30,12 +35,11 @@
           appDropdown
           aria-haspopup="true"
           aria-expanded="false"
-          href="#"
         >
           Manage
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item">Action</a>
         </div>
       </div>
     </div>
